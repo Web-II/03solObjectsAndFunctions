@@ -1,4 +1,4 @@
-import { berekenPunten } from './berekenScore.js';
+import { berekenPunten } from './berekenPunten.js';
 
 const btn = document.getElementById('berekenPunten');
 const woord = document.getElementById('woord');
