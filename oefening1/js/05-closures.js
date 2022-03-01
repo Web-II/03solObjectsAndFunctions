@@ -8,7 +8,7 @@
 const makeStringRepeater = function (nrOfTimes) {
   return function (aString) {
     let result = aString;
-    for (let index = 0; index < nrOfTimes - 1; index++) {
+    for (let i = 0; i < nrOfTimes - 1; i++) {
       result += aString;
     }
     return result;

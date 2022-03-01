@@ -6,7 +6,7 @@
 const myBicycle = {
   speed: 30,
   gear: 1,
-  frameMaterial: 'carbon fibre'
+  frameMaterial: 'carbon fibre',
 };
 
 // Overloop alle properties, verzamel de key/value pairs in een string
@@ -30,7 +30,7 @@ myBicycle.speed += 6;
 // make: "Sram", nrOfGears = 24
 let gearDescription = {
   make: 'Sram',
-  nrOfGears: 24
+  nrOfGears: 24,
 };
 
 // Voeg een property gears toe aan myBicycle
@@ -51,7 +51,7 @@ myBicycle.extras.push('lights');
 // Verander de make van de gears naar 'Shimano'
 myBicycle.gears.make = 'Shimano';
 
-// Maak gebruik van object destrcuturing om de variabelen speed,
+// Maak gebruik van object destructuring om de variabelen speed,
 // frame en color de waarden van de overeenkomstige properties te geven
 // merk op: frame moet de waarde van de property frameMaterial krijgen.
 // Log de waarden van de variabelen naar de console
@@ -65,6 +65,6 @@ console.log(`speed: ${speed} \ncolor: ${color} \nframe: ${frame}`);
 // naar de console
 const {
   gears: { make: gearMake },
-  extras
+  extras,
 } = myBicycle;
 console.log(`gearMake: ${gearMake} \nextras: ${extras.join(', ')}`);
