@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
 const dice1 = {
   eyes: 1,
   roll() {
     this.eyes = Math.floor(Math.random() * 6 + 1);
-  }
+  },
 };
 
 const dice2 = {};
@@ -45,7 +45,7 @@ const craps = {
         }
       }
     }
-  }
+  },
 };
 
 function play() {
@@ -54,17 +54,14 @@ function play() {
   let message = `You played ${craps.getSum()}.`;
 
   if (craps.gameover) {
-    document.getElementById('play').disabled = true;
-    if (craps.earned === 0) message += ' You lost your bet.';
+    document.getElementById("play").disabled = true;
+    if (craps.earned === 0) message += " You lost your bet.";
     else message += ` You won ${craps.earned}.`;
   } else message += ` Keep on playing. Your point is ${craps.point}.`;
   window.alert(message);
 }
-
-function init() {
-  document.getElementById('play').onclick = play;
-  craps.bet = parseInt(prompt('What is your bet?'));
-  alert('Press play to start the game');
+export function initialiseerCraps() {
+  document.getElementById("play").onclick = play;
+  craps.bet = parseInt(prompt("What is your bet?"));
+  alert("Press play to start the game");
 }
-
-window.onload = init;
