@@ -1,11 +1,6 @@
-'use strict';
-
 const myPetRock = {
   userName: '',
   image: 'images/rock.png',
-  resetImage: function () {
-    this.image = 'images/rock.png';
-  },
 };
 
 export function greetUser() {
